@@ -8,12 +8,24 @@ body {
 .white .nav-link {
     color: #010101;
 }
+.white .circle circle {
+    fill: #FFFFFF;
+}
+.white .triangle path {
+    fill: #D40000;
+}
 .dark {
     background-color: #232326;
     color: #F3F2F0;
 }
 .dark .nav-link {
     color: #F3F2F0;
+}
+.dark .circle circle {
+    fill: #D40000;
+}
+.dark .triangle path {
+    fill: #FFFFFF;
 }
 .wrapper {
     max-width: 1140px;
@@ -50,6 +62,22 @@ header {
 .nav-item:last-child {
     padding-right: 0;
 }
+.nav-slash .nav-item {
+    position: relative;
+}
+.nav-slash .nav-item::before {
+    content: '';
+    display: block;
+    height: 24px;
+    width: 1px;
+    background-color: rgba(1,1,1,0.2);
+    position: absolute;
+    left: 0;
+    top: calc(50% - 12px);
+}
+.nav-slash .nav-item:first-child::before {
+    display: none;
+}
 .name {
     font-size: 28px;
     font-weight: 400;
@@ -62,4 +90,58 @@ header {
 .photo {
     margin-bottom: 120px;
     width: 100%;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    margin-top: 100px;
+}
+.social .nav-link {
+    font-size: 16px;
+}
+.project {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+.project-img {
+    display: block;
+    width: 16px;
+    height: 12px;
+    background-image: url(../img/arrow.svg);
+    margin-left: 15px;
+}
+.title-h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+.skill {
+    display: flex;
+    justify-content: space-between;
+}
+.skill-item {
+    flex: 0 0 24%;
+}
+.skill .title-h3 {
+    text-transform: uppercase;
+}
+.skill .description {
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0.8;
+}
+.triangle-main {
+    width: 76px;
+    height: 95px;
+}
+.circle-main {
+    width: 253px;
+    height: 253px;
+}
+.circle-social {
+    width: 106px;
+    height: 106px;
 }
