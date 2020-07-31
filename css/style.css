@@ -70,6 +70,7 @@ header {
     text-decoration: none;
     font-size: 14px;
     transition: 0.3s color ease;
+    line-height: 150%;
 }
 .nav-link:hover {
     color: #D40000;
@@ -118,7 +119,7 @@ header {
     margin-top: 37px;
 }
 .photo {
-    margin-bottom: 98px;
+    margin-bottom: 94px;
     width: 100%;
 }
 .social {
@@ -129,6 +130,7 @@ header {
 }
 .social .nav-link {
     font-size: 16px;
+    text-transform: capitalize;
 }
 .social-item:last-child {
     position: relative;
@@ -268,6 +270,14 @@ header {
     left: -151px;
     z-index: 1;
 }
+.triangle-form {
+    width: 73.34px;
+    height: 91.67px;
+    position: absolute;
+    top: 40px;
+    left: -180px;
+    z-index: 1;
+}
 .circle-main {
     width: 253px;
     height: 253px;
@@ -289,7 +299,14 @@ header {
     width: 90px;
     position: absolute;
     left: -35px;
-    top: calc(50% - 45px)
+    top: calc(50% - 45px);
+}
+.circle-form {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: -150px;
+    top: calc(50% - 2px);
 }
 .circle-social {
     width: 106px;
@@ -500,6 +517,7 @@ header {
 .tarif {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 90px;
 }
 .tarif-item {
     border-bottom: 1px solid #010101;
@@ -507,6 +525,12 @@ header {
     flex-direction: column;
     justify-content: space-between;
     height: 363px;
+}
+.tarif .tarif-item:nth-child(7) {
+    border-bottom: none;
+}
+.tarif .tarif-item:nth-child(8) {
+    border-bottom: none;
 }
 .tarif-title {
     font-size: 28px;
@@ -589,4 +613,140 @@ header {
 }
 .tarif-footer p {
     margin: 0;
+}
+.section-form > div {
+    position: relative;
+}
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 130px;
+}
+.form-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 150%;
+    border-bottom: 1px solid #010101;
+}
+.form-description {
+    font-size: 28px;
+    line-height: 150%;
+    opacity: 0.8;
+    padding-left: 10px;
+    border-bottom: 1px solid #010101;
+}
+.form-description p {
+    margin-bottom: 59px;
+}
+form {
+    font-size: 12px;
+    line-height: 150%;
+    margin-top: 60px;
+    padding-left: 10px;
+}
+form label {
+    opacity: 0.8;
+    display: block;
+    margin-bottom: 9px;
+}
+form input {
+    width: 100%;
+    padding: 27px 20px 25px;
+    background-color: rgba(1, 1, 1, 0.05);
+    border: none;
+    box-sizing: border-box;
+    margin-bottom: 22px;
+    color: #010101;
+}
+form input[type="submit"] {
+    background: #D40000;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 20px 20px;
+    margin-bottom: 0;
+}
+form input[type="submit"]:hover {
+    background: #EA0E00;
+}
+form input:focus {
+    outline: none;
+}
+.ui-selectmenu-button.ui-button {
+    width: 100%;
+    padding: 24px 20px 23px;
+    background-color: rgba(1, 1, 1, 0.05);
+    color: #010101;
+    font-size: 12px;
+    line-height: 150%;
+    box-sizing: border-box;
+    margin-bottom: 42px;
+    border-radius: 0;
+}
+.ui-button:hover, .ui-button:focus {
+    outline: none;
+    border: none;
+}
+.ui-selectmenu-menu .ui-menu {
+    background-color: #E7E6E4;
+    padding: 10px 0 20px 20px;
+    font-size: 12px;
+    line-height: 150%;
+    color: rgba(1, 1, 1, 0.4);
+}
+.ui-selectmenu-menu .ui-menu .ui-menu-item {
+    padding-top: 8px;
+}
+.ui-selectmenu-menu .ui-menu .ui-menu-item:hover {
+    color: rgba(1, 1, 1, 1);
+}
+.form-item .nav-link {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.form-item .nav-item {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+.form-item .nav-item:first-child {
+    padding-left: 0;
+}
+.form-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.ui-button .ui-icon {
+    background-image: url(/img/Arrowdown.svg);
+}
+footer {
+    border-top: 1px solid #010101;
+    padding-top: 60px;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom p {
+    font-size: 12px;
+    line-height: 150%;
+    color: rgba(1, 1, 1, 0.3);
+}
+.footer-link {
+    color: rgba(1, 1, 1, 0.3);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease;
+}
+.footer-link:hover {
+    color: rgba(1, 1, 1, 1);
+    border-bottom: 1px solid rgba(1, 1, 1, 1);
 }
